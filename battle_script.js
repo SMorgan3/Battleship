@@ -1,3 +1,5 @@
+
+//Declare all variables
 var randomLoc = Math.floor(Math.random() * 5);
 var location1 = randomLoc;
 var location2 = location1 + 1;
@@ -7,6 +9,7 @@ var hits = 0;
 var guesses = 0;
 var isSunk = false;
 
+//loop to return HIT if loc1-3 is picked by user, MISS if not
 while (isSunk == false) {
     guess = prompt("Ready, aim, fire! (enter a number from 0-6):")
 
