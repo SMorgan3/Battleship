@@ -123,7 +123,7 @@ var controller = {
             }
         }
     }
-}
+};
 
 function parseGuess(guess) {
     var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
@@ -145,7 +145,7 @@ function parseGuess(guess) {
         }
     }
     return null;
-}
+};
 
 
 
@@ -156,7 +156,7 @@ function handleFireButton() {
     controller.processGuess(guess);
 
     guessInput.value = "";
-}
+};
 
 
 function handleKeyPress(e) {
@@ -166,7 +166,7 @@ function handleKeyPress(e) {
         fireButton.click();
         return false;
     }
-}
+};
 
 window.onload = init;
 
@@ -179,4 +179,4 @@ function init() {
     guessInput.onkeypress = handleKeyPress;
 
     model.generateShipLocations();
-}
+};
